@@ -26,7 +26,7 @@ int main() {
                 backward_selection(featureCount);     
             }
             else {
-                cout << "Invalid Choice, restart menu"
+                cout << "Invalid Choice, restart menu";
             }
 
 
