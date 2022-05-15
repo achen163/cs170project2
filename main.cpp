@@ -10,7 +10,7 @@ int main() {
     
         
         int featureCount =0;
-        int algorithm = 0;
+        int algorithmChoice = 0;
         cout<< "Hello, welcome to Alex Chen's Feature Selection Algoithm." << endl;
         cout << "Please enter the amount of features" << endl;
         cin >> featureCount;
@@ -18,15 +18,18 @@ int main() {
             cout << "Next, select the number of the algorithm you want to run:" << endl;
             cout << "1) Forward Selection" << endl;
             cout << "2) Backward Elimination" << endl;
-            cin >> algorithm;
-            if (algorithm == 1){
+            cin >> algorithmChoice;
+            if (algorithmChoice == 1){
                 forward_selection(featureCount);
+                break;
             }
-            if (algorithm == 2){
-                backward_selection(featureCount);     
+            else if (algorithmChoice == 2){
+                backward_elimination(featureCount);  
+                break;   
             }
             else {
-                cout << "Invalid Choice, restart menu";
+                cout << algorithmChoice << endl;
+                cout << "Invalid Choice, restart menu" << endl;
             }
 
 
