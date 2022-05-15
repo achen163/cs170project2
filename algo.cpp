@@ -9,6 +9,7 @@ float getRand() {
     return rand() % 100 +1;
 
 }
+
 //duplicateChecker to check if feature has already been added already, since we consider adding if not already added only
 bool duplicateChecker(vector<int> features, int val){
     for (int i = 0; i < features.size(); i++){
@@ -19,9 +20,9 @@ bool duplicateChecker(vector<int> features, int val){
     return true;
     
 }
-
+//NOTE: followed the matlab pseudocode provided in discussion slides!
 void forward_selection(int featureCount){
-    //followed the matlab pseudocode provided in discussion slides!
+    
     cout << "Beginning Search" << endl;
     vector<int> current_set_of_features;
     
@@ -54,6 +55,7 @@ void forward_selection(int featureCount){
    
 
 };
+//NOTE: followed the matlab pseudocode provided in discussion slides!
 //this is the same thing but starting from other end. just had to switch for loops where to start and end.
 void backward_elimination(int featureCount) {
      cout << "Beginning Elimination" << endl;
