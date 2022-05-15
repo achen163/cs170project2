@@ -87,7 +87,7 @@ void backward_elimination(int featureCount) {
         }
         //adding highest accuracy to current_set_of_features
         current_set_of_features.push_back(feature_to_elim_at_this_level.back());
-        cout << "On Level " << i << " I eliminated feature " << feature_to_elim_at_this_level.back() << " to current set "<< endl;
+        cout << "On Level " << i << " I eliminated feature " << feature_to_elim_at_this_level.back() << " from the current set "<< endl;
     }
 
 };
